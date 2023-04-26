@@ -1,0 +1,14 @@
+CREATE TABLE departments (id_departments INT NOT NULL, departments TEXT COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL, PRIMARY KEY (id_departments));
+
+CREATE TABLE Hired_employees (id INT NOT NULL, name TEXT COLLATE SQL_Latin1_General_CP1_CI_AS, datetime TEXT COLLATE SQL_Latin1_General_CP1_CI_AS, department_id INT, job_id INT, PRIMARY KEY (id));
+
+CREATE TABLE job (id_job INT NOT NULL, job TEXT COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL, PRIMARY KEY (id_job));
+
+
+aqui esta el scrip de la creacion de las tablas, adjunte la tranformacion que hice en excel antes de cargar los datos a la BDD.
+
+El proceso de carge a la BDD lo hice en el programa DbVisualizer cargando directamente los excel.
+
+En los origenes de las consultas de power bi se puede ver la conexion al servidor donde esta alojada la base de datos
+Servidor 10.0.0.7
+Base de Datos Externos_QV
